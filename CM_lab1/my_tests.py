@@ -4,12 +4,14 @@ from solve_matrix import Solution
 
 def my_test_20x20() -> None:
     matrix = Matrix()
-    solution = Solution(matrix)
+    solution = Solution(matrix, 10e-10)
     solution.solve_matrix()
     print()
     solution.print_solution_vector()
     print()
     solution.is_solution_correct()
+
+my_test_20x20()
 
 
 def my_test_not_square_matrix() -> None:
@@ -23,6 +25,3 @@ def my_test_not_square_matrix() -> None:
     solution.solve_matrix()
     print()
     solution.print_solution_vector()
-
-
-my_test_not_square_matrix()
